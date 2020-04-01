@@ -9,8 +9,7 @@ pipeline {
    }
       stage ('maven install') {
         steps {
-            pom : maven-project-1/pom.xml
-            goals: 'clean install'
+            sh 'mvn clean install'
          }
       }
 }
