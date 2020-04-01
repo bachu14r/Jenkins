@@ -7,4 +7,11 @@ pipeline {
        }
      }
    }
+      stage ('maven install') {
+        steps {
+            tool: Maven,
+            pom : maven-project-1/pom.xml
+            goals: 'clean install'
+         }
+      }
 }
