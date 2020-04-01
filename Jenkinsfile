@@ -7,11 +7,11 @@ pipeline {
        }
      }
    }
-     stage ('maven build') {
-      steps {
-          tool: Maven_Home,
-          pom : maven-project-1/pom.xml
-          goals: 'clean install'
-      }
-     }
+#     stage ('maven build') {
+#      steps {
+#          tool: Maven_Home,
+#          pom : maven-project-1/pom.xml
+#          goals: 'clean install'
+#      }
+#     }
 }
